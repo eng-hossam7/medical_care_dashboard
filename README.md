@@ -1,59 +1,262 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# 📋 **متجر الرعاية الطبية - لوحة التحكم**
 
 <p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+  <img src="https://img.icons8.com/color/96/000000/medical-doctor.png" width="100" alt="Medical Care Logo">
+  <h1 align="center">🚑 لوحة تحكم متجر الرعاية الطبية</h1>
+  <p align="center">نظام إداري متكامل لإدارة متجر الرعاية الطبية</p>
 </p>
 
-## About Laravel
+<p align="center">
+  <a href="https://github.com/eng-hossam7/medical_care_dashboard/actions">
+    <img src="https://github.com/eng-hossam7/medical_care_dashboard/workflows/tests/badge.svg" alt="Build Status">
+  </a>
+  <a href="https://packagist.org/packages/laravel/framework">
+    <img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads">
+  </a>
+  <a href="https://packagist.org/packages/laravel/framework">
+    <img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version">
+  </a>
+  <a href="https://opensource.org/licenses/MIT">
+    <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License">
+  </a>
+  <a href="#">
+    <img src="https://img.shields.io/badge/version-1.0.0-green.svg" alt="Version">
+  </a>
+</p>
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+ 📖 حول المشروع
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+لوحة تحكم إدارية متكاملة مبنية باستخدام **Laravel 10** لإدارة متجر المستلزمات الطبية. توفر النظام إدارة كاملة للمنتجات، الطلبات، العملاء، والمخزون مع واجهة مستخدم عربية متجاوبة.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+ ✨ المميزات الرئيسية
 
-## Learning Laravel
+- 📊 **لوحة تحكم شاملة** مع إحصائيات فورية ومخططات بيانية
+- 🏪 **إدارة المنتجات** الكاملة مع نظام تصنيفات هرمي
+- 👥 **إدارة العملاء** وسجل المشتريات
+- 📦 **إدارة الطلبات** وتتبع الحالة
+- 🔒 **نظام أمان متكامل** مع صلاحيات المستخدمين
+- 📱 **واجهة متجاوبة** تعمل على جميع الأجهزة
+- 🇸🇦 **واجهة عربية كاملة** مع دعم RTL
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+## 🛠️ **التقنيات المستخدمة**
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### **Backend**
+- ![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white) Laravel 10
+- ![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white) PHP 8.1+
+- ![MySQL](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white) MySQL 5.7+
 
-## Laravel Sponsors
+### **Frontend**
+- ![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white) Bootstrap 5 (RTL)
+- ![Chart.js](https://img.shields.io/badge/Chart.js-FF6384?style=for-the-badge&logo=chartdotjs&logoColor=white) Chart.js
+- ![Font Awesome](https://img.shields.io/badge/Font_Awesome-339AF0?style=for-the-badge&logo=fontawesome&logoColor=white) Font Awesome 6
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+## 📁 **هيكل المشروع**
 
-### Premium Partners
+```
+medical_care_dashboard/
+├── app/
+│   ├── Models/              # نماذج البيانات (16 نموذج)
+│   ├── Http/
+│   │   ├── Controllers/     # متحكمات النظام (7 متحكمات)
+│   │   └── Middleware/      # وسائط النظام
+│   └── Providers/           # مقدمي الخدمات
+├── database/
+│   ├── migrations/          # هجرات قاعدة البيانات
+│   └── seeders/             # بيانات تجريبية
+├── resources/
+│   └── views/
+│       └── admin/
+│           ├── layouts/     # قوالب الصفحات
+│           ├── dashboard/   # لوحة التحكم
+│           ├── products/    # إدارة المنتجات
+│           ├── categories/  # إدارة التصنيفات
+│           ├── orders/      # إدارة الطلبات
+│           └── customers/   # إدارة العملاء
+└── public/                  # الأصول العامة
+```
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+## 🚀 **بدء الاستخدام**
 
-## Contributing
+### **المتطلبات المسبقة**
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+- PHP 8.1 أو أحدث
+- Composer
+- MySQL 5.7+ أو MariaDB 10.2+
+- Node.js و NPM
 
-## Code of Conduct
+### **خطوات التثبيت**
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+1. **استنساخ المستودع**
+   ```bash
+   git clone https://github.com/eng-hossam7/medical_care_dashboard.git
+   cd medical_care_dashboard
+   ```
 
-## Security Vulnerabilities
+2. **تثبيت التبعيات**
+   ```bash
+   composer install
+   npm install
+   ```
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+3. **إعداد البيئة**
+   ```bash
+   cp .env.example .env
+   php artisan key:generate
+   ```
 
-## License
+4. **تكوين قاعدة البيانات**
+   ```env
+   DB_CONNECTION=mysql
+   DB_HOST=127.0.0.1
+   DB_PORT=3306
+   DB_DATABASE=medical_care
+   DB_USERNAME=root
+   DB_PASSWORD=
+   ```
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+5. **تشغيل الهجرات**
+   ```bash
+   php artisan migrate
+   php artisan db:seed
+   ```
+
+6. **تشغيل الخادم**
+   ```bash
+   php artisan serve
+   ```
+
+7. **الدخول للنظام**
+   - العنوان: `http://localhost:8000/login`
+   - المستخدم الافتراضي: admin@medical.com
+   - كلمة المرور: password
+
+## 📊 **المكونات الرئيسية**
+
+### **1. لوحة التحكم (Dashboard)**
+- إحصائيات فورية للمبيعات والطلبات
+- مخططات بيانية تفاعلية
+- أحدث الطلبات والمنتجات
+- نظرة عامة على أداء المتجر
+
+### **2. إدارة المنتجات**
+- إضافة وتعديل المنتجات الطبية
+- نظام تصنيفات هرمي
+- إدارة المخزون والتنبيهات
+- رفع صور متعددة للمنتجات
+- نظام العروض والتخفيضات
+
+### **3. إدارة الطلبات**
+- إنشاء وتعديل الطلبات
+- تتبع حالة الطلب (معلق، قيد المعالجة، تم الشحن، إلخ)
+- طباعة الفواتير
+- إدارة المدفوعات المرتبطة
+
+### **4. إدارة العملاء**
+- سجل العملاء ومعلوماتهم الشخصية
+- تاريخ المشتريات لكل عميل
+- إحصائيات الإنفاق والشراء
+- نظام الملاحظات الخاصة
+
+### **5. إدارة التصنيفات**
+- نظام تصنيفات متعدد المستويات
+- ترتيب التصنيفات بالسحب والإفلات
+- إحصائيات المنتجات في كل تصنيف
+
+## 🔒 **نظام الأمان**
+
+### **أنواع المستخدمين**
+
+| الدور | الصلاحيات |
+|-------|-----------|
+| **المدير (Admin)** | صلاحيات كاملة على النظام |
+| **الموظف (Employee)** | إدارة الطلبات والعملاء والمنتجات |
+| **العميل (Customer)** | عرض المنتجات وإجراء الطلبات |
+
+### **إجراءات الأمان**
+- تشفير كلمات المرور باستخدام Bcrypt
+- حماية من هجمات CSRF
+- التحقق من صحة البيانات المدخلة
+- نظام Middleware للصلاحيات
+
+## 📈 **الإحصائيات والتقارير**
+
+### **الإحصائيات المتوفرة**
+- عدد المنتجات النشطة
+- عدد الطلبات اليومية
+- إجمالي الإيرادات
+- عدد العملاء الجدد
+- المنتجات الأكثر مبيعاً
+- المخزون المنخفض
+
+### **المخططات البيانية**
+- مخطط المبيعات الشهرية
+- توزيع المنتجات حسب التصنيف
+- إحصائيات العملاء حسب الجنس
+- نسبة حالات الطلبات
+
+## 🎨 **التصميم والواجهة**
+
+### **مميزات التصميم**
+- واجهة عربية كاملة مع دعم RTL
+- تصميم متجاوب يعمل على جميع الأجهزة
+- ألوان طبية مخصصة (أخضر، أزرق)
+- تأثيرات حركية سلسة
+- أيقونات طبية مميزة
+
+### **المكونات المصممة**
+- بطاقات إحصائية متحركة
+- جداول قابلة للترتيب والفلترة
+- نماذج إدخال محسنة
+- أزرار وإشعارات مخصصة
+- مخططات بيانية تفاعلية
+
+## 📱 **التوافق**
+
+### **المتصفحات المدعومة**
+- Chrome (الإصدار الأخير)
+- Firefox (الإصدار الأخير)
+- Safari (الإصدار الأخير)
+- Edge (الإصدار الأخير)
+
+### **الأجهزة المدعومة**
+- أجهزة الكمبيوتر المكتبية
+- أجهزة اللابتوب
+- الأجهزة اللوحية
+- الهواتف الذكية
+
+## 🤝 **المساهمة**
+
+نرحب بمساهماتكم! للمساهمة في المشروع:
+
+1. Fork المشروع
+2. إنشاء فرع للميزة الجديدة (`git checkout -b feature/AmazingFeature`)
+3. Commit التغييرات (`git commit -m 'Add some AmazingFeature'`)
+4. Push إلى الفرع (`git push origin feature/AmazingFeature`)
+5. فتح Pull Request
+
+## 📄 **الترخيص**
+
+هذا المشروع مرخص تحت رخصة MIT. انظر ملف [LICENSE](LICENSE) للمزيد من التفاصيل.
+
+## 📞 **الدعم**
+
+للدعم الفني أو الاستفسارات:
+
+- **المشاكل التقنية:** إنشاء Issue في GitHub
+- **الاقتراحات:** قسم Discussions
+- **البريد الإلكتروني:** support@medical-care.com
+
+## 🙏 **شكر وتقدير**
+
+نشكر جميع المساهمين الذين ساعدوا في تطوير هذا النظام. خاصة:
+
+- فريق Laravel على الإطار الرائع
+- مجتمع المصادر المفتوحة
+- جميع المستخدمين الذين قدموا ملاحظاتهم القيمة
+
+---
+
+<p align="center">
+  <strong>🚀 نظام إداري متكامل لإدارة متجر المستلزمات الطبية</strong><br>
+  <em>لأي استفسار، لا تتردد في التواصل معنا</em>
+</p>
